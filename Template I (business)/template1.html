@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Username</title>
+		<meta name="author" content="Nameer Rizvi">
+		<meta name="description" content="Username: Tagline"> <!-- FILL-IN USERNAME: TAGLINE -->
+		<meta name="keywords" content="keywords, for, username"> <!-- FILL-IN KEYWORDS -->
+		<link rel="stylesheet" type="text/css" href="template1.css">
+		<!-- <meta name="google-site-verification" content="verification_token"> -->
+		<meta name="robots" content="index,follow,noodp,noydir">
+		<meta name="googlebot" content="index,follow,noodp,noydir">
+		<!-- For favicons: IE 11, Chrome, Firefox, Safari, Opera -->
+		<link rel="icon" href="img/logo.png" sizes="16x16" type="image/png">
+		<link rel="icon" href="img/logo.png" sizes="32x32" type="image/png">
+		<link rel="icon" href="img/logo.png" sizes="48x48" type="image/png">
+		<link rel="icon" href="img/logo.png" sizes="62x62" type="image/png">
+		<link rel="icon" href="img/logo.png" sizes="192x192" type="image/png">
+		<!-- End of favicon code (Ire Aderinokun: https://bitsofco.de/all-about-favicons-and-touch-icons/) -->
+		<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script type="jquery.js"></script>
+		<script type="typeit.js"></script>
+		<script>
+			$(window).load(function() {
+				var linkclicks = 0;
+				$('#nav1').click(function(){
+					if(linkclicks == 0){
+						$('#information').animate({top: "40%"});
+						$('#links_container').animate({opacity: ".8"});
+						linkclicks++;
+						console.log("1 link works")
+					}
+					else {
+						$('#information').animate({top: "50%"});
+						$('#links_container').animate({opacity: "0"});
+						linkclicks--;
+						console.log("2 link works")
+					}
+				});
+				var linkclicks2 = 0;
+				$('#nav2').click(function(){
+					if(linkclicks2 == 0){
+						$('#information').animate({top: "30%"});
+						$('#links_container').animate({opacity: ".8"});
+						linkclicks2++;
+						console.log("1 link works")
+					}
+					else {
+						$('#information').animate({top: "50%"});
+						$('#links_container').animate({opacity: "0"});
+						linkclicks2--;
+						console.log("2 link works")
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<!-- MAIN CONTENT -->
+			<div id="content">
+				<!-- INFO -->
+				<div id="information">
+					<h1>John Doe</h1>
+					<div id="line"></div>
+					<p><i>Tagline: should set a 30 char limit</i></p>
+				</div>
+				<!-- LINKS -->
+				<div id="links">
+					<i class="icon ion-arrow-right-b" id="nav1"></i>
+					<div id="links_container">
+						<a href="https://www.linkedin.com/" target="_blank"><i class="icon ion-social-linkedin"></i></a>
+						<a href="https://www.github.com/" target="_blank"><i class="icon ion-social-github"></i>
+						<a href="https://www.facebook.com/" target="_blank"><i class="icon ion-social-facebook"></i>
+						<a href="https://www.twitter.com/" target="_blank"><i class="icon ion-social-twitter"></i>
+						<a href="https://www.instagram.com/" target="_blank"><i class="icon ion-social-instagram"></i></a>
+					</div>
+				</div>
+				<div id="links2">
+					<i class="icon ion-arrow-up-b" id="nav2"></i>
+				</div>
+		</div>
+	</body>
+</html>
